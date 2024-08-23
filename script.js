@@ -1,4 +1,7 @@
+document.addEventListener('DOMContentLoaded', (event) => {
 //your JS code here. If required.
+
+
 // Function to change the color of the squares on hover
 function hoverEffect(event) {
     // Get all the squares
@@ -25,5 +28,6 @@ const squares = document.querySelectorAll('.square');
 squares.forEach(square => {
     square.addEventListener('mouseenter', hoverEffect);
     square.addEventListener('mouseleave', resetColors);
+});
 });
 
